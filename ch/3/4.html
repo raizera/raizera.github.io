@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="../../css/main.css" />
+
+    <title>raizera's Qiskit</title>
+
+    <style>
+      img {
+      border-radius: 8px;
+      max-width: 100%;
+      height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+
+<!--HEADER-->
+<div id="header">
+  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <!--
+      <img src="assets/physics.png" class="img-fluid"/>
+      -->
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 1
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Preparing Your Environment</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/1/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/1/2.html">Creating your IBM Quantum Experience® account</a></li>
+            <li><a class="dropdown-item" href="../../ch/1/3.html">Installing Qiskit®</a></li>
+            <li><a class="dropdown-item" href="../../ch/1/4.html">Downloading the code samples</a></li>
+            <li><a class="dropdown-item" href="../../ch/1/5.html">Installing your API key and accessing your provider</a></li>
+            <li><a class="dropdown-item" href="../../ch/1/6.html">Keeping your Qiskit® environment up to date</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 2
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Quantum Computing and Qubits with Python</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/2/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/2/2.html">Comparing a bit and a qubit</a></li>
+            <li><a class="dropdown-item" href="../../ch/2/3.html">Visualizing a qubit in Python</a></li>
+            <li><a class="dropdown-item" href="../../ch/2/4.html">A quick introduction to quantum gates</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 3
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">IBM Quantum Experience® – Quantum Drag and Drop</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="2.html">Introducing IBM Quantum Experience®</a></li>
+            <li><a class="dropdown-item" href="3.html">Building quantum scores with Circuit Composer</a></li>
+            <li><a class="dropdown-item" href="4.html">Tossing a quantum coin</a></li>
+            <li><a class="dropdown-item" href="5.html">Moving between worlds</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 4
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Starting at the Ground Level with Terra</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/4/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/2.html">Quantum coin toss revisited</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/3.html">Getting some statistics – tossing many coins in a row</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/4.html">Implementing an upside-down coin toss</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/5.html">Tossing two coins simultaneously</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/6.html">Quantum-cheating in a coin toss? Introducing the Bell state</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/7.html">More ways to quantum-cheat – tweaking the odds</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/8.html">Adding more coins – straight and cheating</a></li>
+            <li><a class="dropdown-item" href="../../ch/4/9.html">Tossing some real coins</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 5
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Touring the IBM Quantum® Hardware with Qiskit®</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/5/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/2.html">What are the IBM Quantum® machines?</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/3.html">Locating the available backends</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/4.html">Comparing backends</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/5.html">Finding the least busy backend</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/6.html">Visualizing the backends</a></li>
+            <li><a class="dropdown-item" href="../../ch/5/7.html">Exploring a selected backend using Qiskit®</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 6
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Understanding the Qiskit® Gate Library</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/6/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/2.html">Visualizing quantum gates</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/3.html">Flipping with the Pauli X, Y, and Z gates</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/4.html">Creating superpositions with the H gate</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/5.html">Fixed z rotations with phase shift gates S, 𝐒† , T, and 𝐓†</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/6.html">Free rotation around the axes with Rx, Ry, and Rz</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/7.html">Building our circuits with the basis gates – U1, U2, U3, and ID </a></li>
+            <li><a class="dropdown-item" href="../../ch/6/8.html">Using gates on 2 qubits</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/9.html">Using gates on more than 2 qubits</a></li>
+            <li><a class="dropdown-item" href="../../ch/6/10.html">What your quantum circuit really looks like</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 7
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Simulating Quantum Computers with Aer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/7/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/7/2.html">Understanding the usage of quantum simulators</a></li>
+            <li><a class="dropdown-item" href="../../ch/7/3.html">Comparing the Qiskit Aer simulator with an IBM quantum computer</a></li>
+            <li><a class="dropdown-item" href="../../ch/7/4.html">Adding noise profiles of IBM Quantum® backends to local simulators</a></li>
+            <li><a class="dropdown-item" href="../../ch/7/5.html">Understanding your circuits by using the unitary simulator</a></li>
+            <li><a class="dropdown-item" href="../../ch/7/6.html">Running diagnostics with the state vector simulator</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 8
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Cleaning Up Your Quantum Act with Ignis
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/8/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/8/2.html">Exploring your qubits to understand T1, T2, errors, and gates</a></li>
+            <li><a class="dropdown-item" href="../../ch/8/3.html">Comparing the qubits on a chip</a></li>
+            <li><a class="dropdown-item" href="../../ch/8/4.html">Estimating the number of gates you have time for</a></li>
+            <li><a class="dropdown-item" href="../../ch/8/5.html">Correcting for the expected with readout correction</a></li>
+            <li><a class="dropdown-item" href="../../ch/8/6.html">Mitigating the unexpected with quantum error correction</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 9
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Grover's Search Algorithm</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/9/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/2.html">Exploring quantum phase kickback</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/3.html">A quick interlude on classical search</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/4.html">Building Grover's search algorithm</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/5.html">Searching with a three qubit Grover</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/6.html">Adding more qubits to the Grover search</a></li>
+            <li><a class="dropdown-item" href="../../ch/9/7.html">Using the Grover circuit in your own code</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link active" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            chapter 10
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Getting to Know Algorithms with Aqua</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="../../ch/10/1.html">Technical requirements</a></li>
+            <li><a class="dropdown-item" href="../../ch/10/2.html">Running Grover's algorithm as an Aqua function</a></li>
+            <li><a class="dropdown-item" href="../../ch/10/3.html">Running Shor's algorithm as an Aqua function</a></li>
+            <li><a class="dropdown-item" href="../../ch/10/4.html">Exploring more Aqua algorithms</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <div id="button">
+        <button type="button" class="btn btn-outline-dark">search</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<!--//HEADER-->
+<div class="container">
+
+  <p>
+    <!--DESCIPTION-->
+    <h1>I'm hosted with GitHub Pages.</h1>
+    <br>
+    <br>
+    <h3>On this page, I will show you how learning work in Qiskit using "Quantum Computing in Pratice with Qiskit" book, by IBM Quantum Experience.</h3>
+<!--//DESCIPTION-->
+  </p>
+
+  <p>
+   texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto - texto
+  </p>
+
+</div>
+</div>
+<!--Option 1: Bootstrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--//Option 1: Bootstrap Bundle with Popper-->
+
+<!--FOOTER-->
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+                <div class="col item social">
+                  <a href="https://github.com/raizera" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/raigarciatorres/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://twitter.com/profraizera" target="_blank"><i class="fa fa-twitter"></i></a>
+                  <a href="https://instagram.com/prof.raizera" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+            <p class="copyright">raizera © 2022</p>
+        </div>
+    </footer>
+</div>
+
+<!--//FOOTER-->
+
+  </body>
+</html>
